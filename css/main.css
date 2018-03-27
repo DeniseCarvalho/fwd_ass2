@@ -1,0 +1,161 @@
+/* custom styles */
+
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+
+* {
+    font-family: 'Roboto', sans-serif;
+    padding: 0 !impotant;
+    margin: o;
+}
+
+.row {
+  margin-right: 0px;
+}
+
+#about {
+    background: #f7fec5;
+    text-align: center;
+    margin-top: 60px;
+}
+
+#about p {
+    text-align: center;
+    padding: 20px 0px 20px 0px;
+    font-size: 22px;
+}
+
+#about2 {
+    background: #b9bab9;
+    min-height: 200px;
+    text-align: center;
+    padding: 40px 0px 40px 0px;
+}
+
+#about2 p {
+    text-align: center;
+    padding: 0px;
+    font-size: 18px;
+}
+
+#about2 ul {
+    list-style-type: none;
+    text-align: center;
+    padding: 0;
+}
+
+#about3 {
+    background-image: url(../img/benefits.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    min-height: 500px;
+    padding: 0px;
+    text-align: center;
+    font-size: 22px;
+}
+
+#about3 p {
+    text-align: center;
+    padding: 0px;
+    font-size: 22px;
+}
+
+#about3 h2 {
+    text-align: center;
+    margin: 60px 0px 60px 0px;
+}
+
+#signup {
+    background: #b9bab9;
+    min-height: 200px;
+    text-align: left;
+    padding: 40px 0px 40px 0px;
+}
+
+#signup h2 {
+    text-align: center;
+    margin: 30px 0px 30px 0px;
+}
+
+#submit{
+    text-align: center;
+}
+
+#btn-sub {
+    width: 320px;
+}
+
+#campaign {
+    background-image: url(../img/campaign.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    min-height: 400px;
+    padding: 0px;
+    text-align: center;
+    font-size: 22px;
+}
+
+#contactus {
+    background: #b9bab9;
+    min-height: 200px;
+    text-align: left;
+    padding: 40px 0px 40px 0px;
+}
+
+#contactus h2 {
+    text-align: center;
+    margin: 30px 0px 30px 0px;
+}
+
+#contact-submit {
+    text-align: center;
+}
+
+#contact-btn-sub {
+    width: 320px;
+}
+
+
+.glyphicon-road {
+    font-size: 6em;
+    text-align: center;
+    padding: 15px;
+}
+
+.glyphicon-dashboard {
+    font-size: 6em;
+    text-align: center;
+    padding: 15px;
+}
+
+.glyphicon-user {
+    font-size: 6em;
+    text-align: center;
+    padding: 15px;
+}
+
+.glyphicon-ok {
+    font-size: 1em;
+    padding: 2px;
+}
+
+.glyphicon-star {
+    font-size: 2em;
+    padding: 15px;
+}
+
+/* #myBtn {
+    width: 320px;
+    font-size: 18px;
+    padding: 10px;
+    border: none;
+    background: #000;
+    color: #fff;
+    cursor: pointer;
+    position: absolute;
+    text-align: center;
+} */
+
+#myBtn:hover {
+    background: #ddd;
+    color: black;
+}
