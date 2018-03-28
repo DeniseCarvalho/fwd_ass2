@@ -12,56 +12,89 @@
   margin-right: 0px;
 }
 
+.navbar-brand {
+    position: absolute;
+    float: none;
+    padding: 0;
+    margin: 0;
+}
+
+#home {
+    min-height: 700px;
+}
+
+#myVideo {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    min-width: 100%; 
+    min-height: 100%;
+    z-index: -1;
+}
+
 #about {
     background: #f7fec5;
     text-align: center;
-    margin-top: 60px;
+    padding: 40px;
 }
 
 #about p {
     text-align: center;
     padding: 20px 0px 20px 0px;
     font-size: 22px;
+    line-height: 2;
 }
 
 #about2 {
-    background: #b9bab9;
+    background-image: url(../img/main_background_1_2000x1428.png);
+    background-attachment: fixed;
     min-height: 200px;
     text-align: center;
     padding: 40px 0px 40px 0px;
+    
 }
 
 #about2 p {
     text-align: center;
     padding: 0px;
-    font-size: 18px;
+    font-size: 18px;    
 }
 
 #about2 ul {
     list-style-type: none;
     text-align: center;
     padding: 0;
+    
+}
+
+div.transbox {
+  margin: 0px;
+  background-color: #ffffff;
+  border: 0;
+  opacity: 0.8;
+  filter: alpha(opacity=80); 
 }
 
 #about3 {
-    background-image: url(../img/benefits.jpg);
-    background-size: cover;
-    background-attachment: fixed;
-    min-height: 500px;
+    background-color: #000000;
+    min-height: 400px;
     padding: 0px;
     text-align: center;
     font-size: 22px;
+    color: #ffffff;
 }
 
 #about3 p {
     text-align: center;
     padding: 0px;
     font-size: 22px;
+    color: #ffffff;
 }
 
 #about3 h2 {
     text-align: center;
-    margin: 60px 0px 60px 0px;
+    margin: 40px 0px 40px 0px;
+    color: #ffffff;
 }
 
 #signup {
@@ -122,13 +155,13 @@
 }
 
 .glyphicon-dashboard {
-    font-size: 6em;
+    font-size: 5em;
     text-align: center;
     padding: 15px;
 }
 
 .glyphicon-user {
-    font-size: 6em;
+    font-size: 5em;
     text-align: center;
     padding: 15px;
 }
@@ -139,8 +172,10 @@
 }
 
 .glyphicon-star {
-    font-size: 2em;
+    font-size: 1.5em;
     padding: 15px;
+    color: darkgoldenrod;
+    text-shadow: 2px 2px black;
 }
 
 /* #myBtn {
