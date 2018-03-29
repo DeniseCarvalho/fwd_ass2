@@ -1,15 +1,15 @@
 /* custom styles */
 
 @import url('https://fonts.googleapis.com/css?family=Roboto');
+@import url ('https://fonts.googleapis.com/css?family=Lobster');
 
 * {
     font-family: 'Roboto', sans-serif;
-    padding: 0 !impotant;
-    margin: o;
 }
 
 .row {
-  margin-right: 0px;
+    margin-right: 0px;
+    margin-left: 0px;
 }
 
 .navbar-brand {
@@ -19,60 +19,107 @@
     margin: 0;
 }
 
+section {
+    float: none;
+    clear: both;
+}
+
 #home {
+    text-align: center;
     min-height: 700px;
+    background-color: #000;
+}
+
+#btn-download {
+    width: 280px;
+}
+
+#div-button {
+    position: absolute;
+    top: 400px;
+    height: 200px;
+}
+
+#video-container {
+    height: 700px;
+    width: 80%;
+    margin: 0 auto;
+    overflow: hidden;
 }
 
 #myVideo {
-    position: absolute;
-    right: 0;
-    bottom: 0;
-    min-width: 100%; 
-    min-height: 100%;
+    height: 100%;
     z-index: -1;
+}
+
+#photo1 {
+    background-image: url(../img/photo1_a.jpg);
+    background-attachment: fixed;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    min-height: 400px;
+    text-align: center;
 }
 
 #about {
     background: #f7fec5;
     text-align: center;
-    padding: 40px;
+    min-height: 200px;
 }
 
 #about p {
     text-align: center;
-    padding: 20px 0px 20px 0px;
     font-size: 22px;
     line-height: 2;
+    margin-top: 0px;
+    padding: 0px;
+    padding-top: 25px;
 }
 
 #about2 {
-    background-image: url(../img/main_background_1_2000x1428.png);
-    background-attachment: fixed;
+    background-color: #ffffff;
     min-height: 200px;
     text-align: center;
     padding: 40px 0px 40px 0px;
-    
+
 }
 
 #about2 p {
     text-align: center;
     padding: 0px;
-    font-size: 18px;    
+    font-size: 18px;
 }
 
 #about2 ul {
     list-style-type: none;
     text-align: center;
     padding: 0;
-    
+
+}
+
+#passenger {
+    height: 200px;
+
+}
+
+#driver {
+    height: 200px;
+
+}
+
+#mirror {
+    padding: 60px;
+    height: 250px;
+
 }
 
 div.transbox {
-  margin: 0px;
-  background-color: #ffffff;
-  border: 0;
-  opacity: 0.8;
-  filter: alpha(opacity=80); 
+    margin: 0px;
+    background-color: #ffffff;
+    border: 0;
+    opacity: 0.8;
+    filter: alpha(opacity=80);
 }
 
 #about3 {
@@ -97,6 +144,16 @@ div.transbox {
     color: #ffffff;
 }
 
+#photo2 {
+    background-image: url(../img/photo2.jpg);
+    background-attachment: fixed;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    min-height: 400px;
+    text-align: center;
+}
+
 #signup {
     background: #b9bab9;
     min-height: 200px;
@@ -109,7 +166,19 @@ div.transbox {
     margin: 30px 0px 30px 0px;
 }
 
-#submit{
+#submit {
+    text-align: center;
+}
+
+#thankyou {
+    display: none;
+    font-size: 18px;
+    text-align: center;
+}
+
+#thankyou2 {
+    display: none;
+    font-size: 18px;
     text-align: center;
 }
 
@@ -117,14 +186,15 @@ div.transbox {
     width: 320px;
 }
 
-#campaign {
-    background-image: url(../img/campaign.jpg);
+#photo3 {
+    background-image: url(../img//photo3_a.jpg);
     background-size: cover;
     background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-position: center center;
     min-height: 400px;
     padding: 0px;
     text-align: center;
-    font-size: 22px;
 }
 
 #contactus {
@@ -147,25 +217,6 @@ div.transbox {
     width: 320px;
 }
 
-
-.glyphicon-road {
-    font-size: 6em;
-    text-align: center;
-    padding: 15px;
-}
-
-.glyphicon-dashboard {
-    font-size: 5em;
-    text-align: center;
-    padding: 15px;
-}
-
-.glyphicon-user {
-    font-size: 5em;
-    text-align: center;
-    padding: 15px;
-}
-
 .glyphicon-ok {
     font-size: 1em;
     padding: 2px;
@@ -173,24 +224,63 @@ div.transbox {
 
 .glyphicon-star {
     font-size: 1.5em;
-    padding: 15px;
+    padding: 8px;
     color: darkgoldenrod;
     text-shadow: 2px 2px black;
 }
 
-/* #myBtn {
-    width: 320px;
-    font-size: 18px;
-    padding: 10px;
-    border: none;
-    background: #000;
-    color: #fff;
-    cursor: pointer;
-    position: absolute;
+.glyphicon-leaf {
+    font-size: 3em;
     text-align: center;
-} */
+    padding: 15px;
+}
 
-#myBtn:hover {
-    background: #ddd;
-    color: black;
+.glyphicon-piggy-bank {
+    font-size: 3em;
+    text-align: center;
+    padding: 15px;
+}
+
+.glyphicon-map-marker {
+    font-size: 3em;
+    text-align: center;
+    padding: 15px;
+}
+
+#photo4 {
+    background-image: url(../img/photo4.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-position: center center;
+    min-height: 400px;
+    padding: 0px;
+}
+
+#tagline{
+    font-family: 'Lobster', sans-serif;
+    font-size: 4em;
+    text-align: center;
+    padding: 180px 0px 180px 0px;
+    color: #ffffff;
+    text-shadow: 3px 3px 3px #aaa;
+}
+
+#footer {
+    min-height: 200px;
+    padding: 30px 0px 0px 0px;
+}
+
+#left-footer {
+    font-size: 1em;
+    text-align: left;
+}
+
+#right-footer {
+    font-size: 1em;
+    text-align: right;
+}
+
+i {
+    color: green;
 }
