@@ -62,18 +62,20 @@
         </nav>
     </header>
     <!--end header/navbar-->
+    
+    <section class="row" id="navbar-filling">
+    </section>
 
     <section class="row" id="home">
-        <div id="video-container">
-            <video autoplay muted loop id="myVideo">
+       <video autoplay muted loop id="myVideo">
             <source src="video/Motorway_Compressed_New.mp4" type="video/mp4">
         </video>
-        </div>
 
-        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12" id="div-button">
+        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12" id="div-btn-download">
             <button class="btn btn-success btn-lg" id="btn-download">DOWNLOAD APP</button>
         </div>
-    </section>
+     
+     </section>
 
 
     <!--end #home-->
@@ -392,7 +394,34 @@
     <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
     <script>
         window.jQuery || document.write('<script src="js/vendor/jquery-1.11.2.min.js"><\/script>')
+        
+        function resizeVideo() {
+            var home = $("#home");
+            home.css("height", "700px");
+            
+            var video = $("#myVideo");
+            video.css("width", "auto");
+            video.css("height", home.height()+"px");
 
+            var videoTop = 50;
+            
+            if (video.width() > home.width()) {
+                video.css("width", home.width()+"px");
+                video.css("height", "auto");
+                
+                video.css("left", "0px");  
+                home.css("height", (video.height() + 100 )+"px");
+                videoTop += 50
+            } else {
+                var newLeft = (home.width() - video.width()) / 2;
+                video.css("left", newLeft+"px");                
+            }
+            
+            video.css("top", videoTop+"px");
+            $("#div-btn-download").css("top", 0.9*home.height()+"px");
+            $("#div-btn-download").css("height", 0.1*home.height()+"px");
+        }
+        
         $(document).ready(function() {
             $("#btn-sub").click(function() {
                 var validForm = $("#signup-form")[0].checkValidity();
@@ -419,7 +448,11 @@
                     $("#btn-send-con").click();
                 }
             });
-
+            
+            resizeVideo();
+            $("#myVideo").show();
+            
+            window.addEventListener("resize", resizeVideo);
         });
     </script>
 
