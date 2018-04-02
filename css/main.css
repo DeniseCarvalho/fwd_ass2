@@ -24,7 +24,7 @@ section {
     clear: both;
 }
 
-#navbar-filling {
+#start {
     width: 100%;
     height: 50px;
 }
@@ -104,11 +104,10 @@ section {
     font-size: 18px;
 }
 
-#about2 ul {
-    list-style-type: none;
-    text-align: center;
+#infographic{
+    text-align: center center;
     padding: 0;
-
+    margin: 0 auto;
 }
 
 #passenger {
