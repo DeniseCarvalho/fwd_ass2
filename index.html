@@ -15,7 +15,7 @@
     <title>CarShare</title>
 
     <link rel="shortcut icon" type="image/x-icon" href="img/icon.ico">
-    
+
     <link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
 
@@ -50,6 +50,9 @@
                             <a class="nav-link" href="#about">ABOUT US</a>
                         </li>
                         <li class="nav-item">
+                            <a class="nav-link" href="#about">ABOUT US</a>
+                        </li>
+                        <li class="nav-item">
                             <a class="nav-link" href="#signup">SIGN UP</a>
                         </li>
                         <li class="nav-item">
@@ -62,20 +65,22 @@
         </nav>
     </header>
     <!--end header/navbar-->
-    
+
     <section class="row" id="navbar-filling">
     </section>
 
     <section class="row" id="home">
-       <video autoplay muted loop id="myVideo">
-            <source src="video/Motorway_Compressed_New.mp4" type="video/mp4">
+        <video autoplay muted loop id="myVideo">
+            <source src="video/Motorway_Comp_PP_VBR2_24.mp4" type="video/mp4">
+            <source src="video/Motorway_Comp_PP_VBR2_24.ogv" type="video/ogv">
+            <source src="video/Motorway_Comp_PP_VBR2_24.WebM" type="video/WebM">
         </video>
 
         <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12" id="div-btn-download">
             <button class="btn btn-success btn-lg" id="btn-download">DOWNLOAD APP</button>
         </div>
-     
-     </section>
+
+    </section>
 
 
     <!--end #home-->
@@ -88,7 +93,11 @@
 
                 <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
 
-                    <p>Car Share is a community powered transport Network for car pooling! <br> Connecting drivers with spare seats with passengers who need a cheap cost effective trip, reducing the cost to the driver and reducing our communities carbon footprint.</p>
+                    <p class="into">CarShare <span class="lower">is a</span> <span class="highlight_1">community<br> powered <br>transport Network </span></p>
+                </div>
+                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                    <p>
+                        <span class="thin">Connecting drivers with spare seats with passengers who need a cheap cost effective trip, reducing the cost to the driver and reducing our communities carbon footprint.</span></p>
 
                 </div>
             </div>
@@ -229,7 +238,7 @@
         <!--end container -->
     </section>
     <!--end #about -->
-    
+
     <section class="row" id="photo2">
 
     </section>
@@ -348,16 +357,17 @@
 
     </section>
     <!--end #contactus-->
-    
-    <section class="row" id="photo4">
-    
-    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12" >
-                    
-                          
-                     <h2 id="tagline">Share The Cost &amp; Save The Environment</h2>     
-                                    
 
-                </div><!--end columm -->
+    <section class="row" id="photo4">
+
+        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+
+
+            <h2 id="tagline">Share The Cost &amp; Save The Environment</h2>
+
+
+        </div>
+        <!--end columm -->
 
     </section>
     <!--end #photo3-->
@@ -369,21 +379,23 @@
             <div class="row">
 
                 <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12" id="left-footer">
-                    
-                       <i class="fa fa-facebook-square fa-2x"></i>
-                       <i class="fa fa-instagram fa-2x"></i>
-                     <p>Donwload App: IPhone | Android </p>      
-                     <p>Terms and Conditions</p>     
-                                    
 
-                </div><!--end columm -->
-                
-                <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12" id="right-footer">                                         
-                        
-                     <p>&copy; Copyright CarShare 2018</p>      
-                     <p>Privacy Policy</p>              
+                    <i class="fa fa-facebook-square fa-2x"></i>
+                    <i class="fa fa-instagram fa-2x"></i>
+                    <p>Donwload App: IPhone | Android </p>
+                    <p>Terms and Conditions</p>
 
-                </div><!--end columm -->
+
+                </div>
+                <!--end columm -->
+
+                <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12" id="right-footer">
+
+                    <p>&copy; Copyright CarShare 2018</p>
+                    <p>Privacy Policy</p>
+
+                </div>
+                <!--end columm -->
             </div>
         </div>
 
@@ -394,34 +406,34 @@
     <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
     <script>
         window.jQuery || document.write('<script src="js/vendor/jquery-1.11.2.min.js"><\/script>')
-        
+
         function resizeVideo() {
             var home = $("#home");
             home.css("height", "700px");
-            
+
             var video = $("#myVideo");
             video.css("width", "auto");
-            video.css("height", home.height()+"px");
+            video.css("height", home.height() + "px");
 
             var videoTop = 50;
-            
+
             if (video.width() > home.width()) {
-                video.css("width", home.width()+"px");
+                video.css("width", home.width() + "px");
                 video.css("height", "auto");
-                
-                video.css("left", "0px");  
-                home.css("height", (video.height() + 100 )+"px");
+
+                video.css("left", "0px");
+                home.css("height", (video.height() + 100) + "px");
                 videoTop += 50
             } else {
                 var newLeft = (home.width() - video.width()) / 2;
-                video.css("left", newLeft+"px");                
+                video.css("left", newLeft + "px");
             }
-            
-            video.css("top", videoTop+"px");
-            $("#div-btn-download").css("top", 0.9*home.height()+"px");
-            $("#div-btn-download").css("height", 0.1*home.height()+"px");
+
+            video.css("top", videoTop + "px");
+            $("#div-btn-download").css("top", 0.9 * home.height() + "px");
+            $("#div-btn-download").css("height", 0.1 * home.height() + "px");
         }
-        
+
         $(document).ready(function() {
             $("#btn-sub").click(function() {
                 var validForm = $("#signup-form")[0].checkValidity();
@@ -448,10 +460,10 @@
                     $("#btn-send-con").click();
                 }
             });
-            
+
             resizeVideo();
             $("#myVideo").show();
-            
+
             window.addEventListener("resize", resizeVideo);
         });
     </script>
