@@ -31,8 +31,8 @@ section {
 
 #home {
     text-align: center;
-    height: 700px;
     background-color: #000;
+    height: 800px;
 }
 
 #btn-download {
@@ -50,6 +50,7 @@ section {
     position: absolute;
     left: 0;
     z-index: 0;
+    max-width: 1200px;
 }
 
 #photo1 {
@@ -93,7 +94,6 @@ section {
 
 #about2 {
     background-color: #ffffff;
-    min-height: 200px;
     text-align: center;
     padding: 40px 0px 40px 0px;
 }
@@ -196,7 +196,7 @@ div.transbox {
 }
 
 #btn-sub {
-    width: 320px;
+    width: 280px;
 }
 
 #photo3 {
@@ -227,7 +227,7 @@ div.transbox {
 }
 
 #contact-btn-sub {
-    width: 320px;
+    width: 280px;
 }
 
 .glyphicon-ok {
